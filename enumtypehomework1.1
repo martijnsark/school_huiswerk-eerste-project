@@ -1,0 +1,32 @@
+﻿using System;
+
+namespace enumtype
+{
+    class Program
+    {
+        enum Directions
+        {
+            North,
+            South,
+            West,
+            East
+        }
+        static void Main(string[] args)
+        {
+            
+
+            Directions playerDirection;
+            playerDirection = Directions.North;
+
+            Console.WriteLine("write any of the following steps forward: North, South, West, East");
+            Console.ReadLine();
+
+            foreach (int i in Enum.GetValues(typeof(Directions)))
+            {
+                Console.WriteLine($"- {(Directions)i} has the value {i}"); // (ErrorCode)i converts the numeric value to the name value
+            }
+
+            
+        }
+    }
+}
