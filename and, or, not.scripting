@@ -1,0 +1,111 @@
+﻿using System;
+
+namespace logic_operators
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            // ASSIGNMENTS: LOGICAL OPERATORS
+
+            #region AND operator
+            // 01. Note down the symbol of the AND operator.
+            // its like a D shape
+            // 02. Explain what an AND operator is and what it does.
+            // an and operator means u need 2 things to be true if you want the result of the if statement to happen
+            // 03. Finish the Truth table for the AND operator.
+            //     A     | B     | C
+            //     true  | true  | true
+            //     true  | false | false
+            //     false | true  | false
+            //     false | false | false
+
+            #endregion
+
+            #region OR operator
+            // 04. Note down the symbol of the OR operator.
+            // its like a 2d rocket ship or paper airplane
+            // 05. Explain what an OR operator is and what it does.
+            // it means 1 of the 2 following statemnets has to be true if both are true the if statement will still work
+            // 06. Finish the Truth table for the OR operator.
+            //     A     | B     | C
+            //     true  | true  | true
+            //     true  | false | true
+            //     false | true  | true
+            //     false | false | false
+
+            #endregion
+
+            #region NOT operator
+            // 07. Note down the symbol of the NOT operator.
+            // a triangle with a cirlce to the right side
+            // 08. Explain what an NOT operator is and what it does.
+            // if the input is on the output is of and the ohterway around
+            #endregion
+
+            #region Truth table coding
+            // 09.
+            // Write code that satisfies the following Truth tables
+            // For the given values of A and B you need to write code that
+            // calculates the correct value for C
+
+            // You may write the code however you like.
+            // Just IF statements might do the trick but... 
+            // Try to use them in combination with logical operators and write clean readable code.
+
+            //   a.  A     | B     | C
+            //      -------|-------|------
+            //       true  | true  | false
+            //       true  | false | true
+            //       false | true  | false
+            //       false | false | true
+
+            //   b.  A     | B     | C
+            //      -------|-------|------
+            //       true  | true  | true
+            //       true  | false | true
+            //       false | true  | false
+            //       false | false | true
+
+            //   c.  A     | B     | C
+            //      -------|-------|------
+            //       true  | true  | true
+            //       true  | false | true
+            //       false | true  | true
+            //       false | false | true
+
+           
+
+            #endregion
+
+            #region Weird car
+            // 10.
+            // A car has 3 booleans, 'hasFuel', 'hasElectricity' and 'canDrive'.
+            // the car can only drive when it has either fuel OR electricity.
+            // It can not drive on both.
+            // It is a weird car...
+            // Write code which assigns the correct value to 'canDrive' depending on the available fuel.
+
+
+            //use the xor that way only one may be true anything else will be false
+
+            bool switch1 = true;  // on
+            bool switch2 = false; // off
+
+            if (switch1 ^ switch2)
+            {
+                Console.WriteLine("u have given 1 out of 2 fuels the car works!");
+            }
+            else
+            {
+                Console.WriteLine("u have either given both or neither this car won't work now....");
+            }
+
+            Console.ReadLine();
+
+            #endregion
+        }
+    }
+}
